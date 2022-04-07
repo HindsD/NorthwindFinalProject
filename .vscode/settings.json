@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net5.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/cb8edaac-3447-4218-b1b4-442a0248ff67/resourceGroups/northwind-34-dwh_group/providers/Microsoft.Web/sites/northwind-34-dwh"
+}

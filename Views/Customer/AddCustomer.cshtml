@@ -1,0 +1,10 @@
+@using Northwind.Models
+@model IEnumerable<Customer>
+
+<ul class="list-group">
+@foreach (Customer c in Model)
+{
+    <li class="list-group-item">@c.CompanyName - @c.City @c.Region</li>
+
+}
+</ul>

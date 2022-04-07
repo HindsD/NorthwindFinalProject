@@ -1,0 +1,22 @@
+@using Northwind.Models
+@model IEnumerable<Discount>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Discount: </th>
+            <th scope="col">Discount Description: </th>
+            <th scope="col">Expiration: </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Discount d in Model)
+        {
+            <tr>
+                <th scope="row" class="list-group-item">@d.Title</th>
+                <td>@d.Description</td>
+                <td>@d.EndTime.ToString("MM/dd/yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>
